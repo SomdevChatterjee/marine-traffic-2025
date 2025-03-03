@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">  
+
+    <style>
+      /* Ensuring uniform image sizes for cards */
+      .card-img {
+          height: 200px; /* Fixed height for consistency */
+          object-fit: contain; /* Ensures images fit without distortion */
+          width: 100%; /* Ensures full width responsiveness */
+          max-width: 180px; /* Prevents images from being too large on wider screens */
+      }
+      .desc-img {
+          height: 400px; /* Fixed height for consistency */
+          object-fit: cover; /* Ensures images fit without distortion */
+          width: 100%; /* Ensures full width responsiveness */
+          max-width: 300px; /* Prevents images from being too large on wider screens */
+      }
+  
+      /* Ensure all cards have the same height */
+      .shadow {
+          min-height: 300px;
+      }
+  </style>
+
+    <title>Committee</title>
+</head>
+<body>
+
+  <body>
+<!--NavBar Started-->
+<nav class="navbar navbar-expand-lg navbar-light bg-info sticky-top">
+  <div class="container-fluid">
+    <a class=" navbar-brand" href="#"><img height="50px" width=100px" src="./assets/MT LOGO.png" alt=""></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./event.html">Event</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./Gallery.html">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./Committee.html">Committee</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./Contact.html">Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./Terms_Condition.html">Terms and Conditions</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./Privacy_Policy.html">Privacy Policy</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!--Navbar ended-->
+
+
+<!-- the photos must be in a heirarchal format such that the chancellor at top, vice chancellor at next level along with president, in the next level will be provost, registrars and additional registrars  -->
+
+    <div class="container-fluid-fluid pt-5 pb-5 bg-info justify-content-center">
+        <h1 class="display-1 text-white text-center">Managing Committee</h1>
+    </div>
+
+    <div> 
+      <h3 class="display-5 text-center mt-4">University Heads</h3>
+  </div>
+  
+  <div class="container-fluid mt-5">
+      <div class="row justify-content-center">
+          <!-- Chancellor (Top Level) -->
+          <div class="col-12 text-center">
+              <div class="p-3 shadow rounded bg-white d-inline-block">
+                  <img src="./assets/managing-committee/chancellor.png" class="img-fluid rounded card-img" alt="Chancellor">
+                  <p class="mt-3 fw-bold">DR. J. RAMACHANDRAN</p>
+                  <p class="mt-3 fw-bold">Chancellor</p>
+              </div>
+          </div>
+      </div>
+  
+      <!-- Vice Chancellor & President (Second Level) -->
+      <div class="row justify-content-center mt-4">
+          <div class="col-lg-3 col-md-6 col-sm-12 text-center">
+              <div class="p-3 shadow rounded bg-white">
+                  <img src="./assets/managing-committee/vice-chancellor.png" class="img-fluid rounded card-img" alt="Vice Chancellor">
+                  <p class="mt-3 fw-bold">DR. V. RAJENDRAN</p>
+                  <p class="mt-3 fw-bold">Vice Chancellor</p>
+              </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 text-center">
+              <div class="p-3 shadow rounded bg-white">
+                  <img src="./assets/managing-committee/president.png" class="img-fluid rounded card-img" alt="President">
+                  <p class="mt-3 fw-bold">DR. RAJESH RAMACHANDRAN</p>
+                  <p class="mt-3 fw-bold">President</p>
+              </div>
+          </div>
+      </div>
+  
+      <!-- Provost, Registrar, Additional Registrar (Third Level) -->
+      <div class="row justify-content-center mt-4">
+          <div class="col-lg-3 col-md-4 col-sm-12 text-center">
+              <div class="p-3 shadow rounded bg-white">
+                  <img src="./assets/managing-committee/provost.png" class="img-fluid rounded card-img" alt="Provost">
+                  <p class="mt-3 fw-bold">COL. DR. G. THIRUVASAGAM</p>
+                  <p class="mt-3 fw-bold">Provost</p>
+              </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-12 text-center">
+              <div class="p-3 shadow rounded bg-white">
+                  <img src="./assets/managing-committee/Registrar.png" class="img-fluid rounded card-img" alt="Registrar">
+                  <p class="mt-3 fw-bold">Dr. R. Muthezhilan</p>
+                  <p class="mt-3 fw-bold">Registrar a/c</p>
+              </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-12 text-center">
+              <div class="p-3 shadow rounded bg-white">
+                  <img src="./assets/managing-committee/additional-registrar.png" class="img-fluid rounded card-img" alt="Additional Registrar">
+                  <p class="mt-3 fw-bold">DR. V. SANGEETHA ALBIN</p>
+                  <p class="mt-3 fw-bold">Additional Registrar</p>
+              </div>
+          </div>
+      </div>
+  </div>
+  
+                <div class="mt-5"> 
+                    <h3 class="display-5 text-center">Event Directors</h3>
+                </div>
+                
+
+        <div class="container-fluid mt-5">
+            <div class="row g-4 justify-content-center">
+                <!-- Image 1 -->
+                <div class="col-lg-2 col-md-4 col-sm-6 text-center">
+                    <div class="p-3 shadow rounded bg-white">
+                        <img src="./assets/managing-committee/dean-hod-marine-engineers.png" class="img-fluid rounded-0 card-img" alt="Image 1">
+                        <p class="mt-3 fw-bold">C/E M. MUTHUKUMAR</p>
+                        <p class="mt-3 fw-bold">Head of the Department</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 text-center">
+                    <div class="p-3 shadow rounded bg-white">
+                        <img src="./assets/managing-committee/HOD-sidephoto.jpeg" class="img-fluid rounded-0 card-img" alt="Image 1">
+                        <p class="mt-3 fw-bold">Koki Panneerselvam</p>
+                        <p class="mt-3 fw-bold">Academic Discipline Incharge</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-5"> 
+                <h3 class="display-5 text-center">Event Committee</h3>
+            </div>
+            
+        <div class="container-fluid mt-4 mb-4">
+            <div class="row g-4 justify-content-center">
+                  <!-- Image 2 -->
+                <div class="col-lg-2 col-md-4 col-sm-6 text-center">
+                    <div class="p-3 shadow rounded bg-white">
+                        <img src="./assets/managing-committee/Event-committee4.jpeg" class="img-fluid rounded card-img" alt="Image 2">
+                        <p class="mt-3 fw-bold">SASIDHARAN MOHAN</p>
+                        <p class="mt-3 fw-bold">Student Organizer</p>
+                    </div>
+                </div>
+                <!-- Image 3 -->
+                <div class="col-lg-2 col-md-4 col-sm-6 text-center">
+                    <div class="p-3 shadow rounded bg-white">
+                        <img src="./assets/managing-committee/Event-committee3.jpeg" class="img-fluid rounded card-img" alt="Image 3">
+                        <p class="mt-3 fw-bold">KRITHIS A</p>
+                        <p class="mt-3 fw-bold">Student Organizer</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 text-center">
+                    <div class="p-3 shadow rounded bg-white">
+                        <img src="./assets/managing-committee/Event-committee2.JPG" class="img-fluid rounded card-img" alt="Image 3">
+                        <p class="mt-3 fw-bold">Ligeesh S M</p>
+                        <p class="mt-3 fw-bold">Student Organizer</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+
+
+       <!-- Footer -->
+       <footer class="container-fluid text-center text-lg-start bg-info text-muted">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+          <!-- Left -->
+          <div class="me-5 d-none d-lg-block">
+            <span>Get connected with us on social networks: </span>
+          </div>
+          <!-- Left -->
+      
+          <!-- Right -->
+          <div>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/marine_traffic_2k25?igsh=MWo0dXl1a214MG15dA==" class="me-4 text-reset">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+          <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+      
+        <!-- Section: Links  -->
+        <section class="">
+          <div class="container text-center text-md-start mt-5">
+            <!-- Grid row -->
+            <div class="row mt-3">
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                <!-- Content -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                  <i class="fas fa-gem me-3"></i>Marine Traffic 2025
+                </h6>
+                <p>
+                  Get ready for an electrifying maritime extravaganza at AMET University! From adrenaline-pumping underwater challenges to intense intellectual battles and show-stopping cultural performances, Marine Traffic 2025 is the ultimate fusion of skill, innovation, and entertainment. Witness the best minds and talents from across universities compete, collaborate, and celebrate the spirit of the sea. Join us and be part of the legacy! 
+                </p>
+              </div>
+              <!-- Grid column -->
+      
+              
+      
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                  Useful links
+                </h6>
+                <p>
+                  <a href="./index.html" class="text-reset">Home</a>
+                </p>
+                <p>
+                  <a href="./about.html" class="text-reset">About</a>
+                </p>
+                <p>
+                  <a href="./Contact.html" class="text-reset">Contact</a>
+                </p>
+                <p>
+                  <a href="./Privacy_Policy.html" class="text-reset">Privacy Policy</a>
+                </p>
+                <p>
+                  <a href="./Terms_Condition.html" class="text-reset">Terms and Conditions</a>
+                </p>
+                <p>
+                  <a href="./event.html" class="text-reset">Register</a>
+                </p>
+              </div>
+              <!-- Grid column -->
+      
+              <!-- Grid column -->
+              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">Usefull Contacts</h6>
+                <p><i class="fas fa-home me-3"></i>135, SH 49, Kanathur, Kanathur Reddykuppam, Tamil Nadu 603112</p>
+                <p>
+                  <a class="link-secondary" href="mailto:marinetraffic@ametuniv.ac.in?subject=Inquiry&body=Hello,%20I%20would%20like%20to%20know%20more"><i class="fas fa-envelope me-3"></i>marinetraffic@ametuniv.ac.in</a>
+                </p>
+                <p><a href="tel:+918608872674" class="link-secondary"><i class="fas fa-phone me-3"></i>+91 8608872674</a></p>
+               <p><a href="tel:+919994564994" class="link-secondary"><i class="fas fa-phone me-3"></i>+91 9994564994</a></p>
+              </div>
+              <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+          </div>
+        </section>
+        <!-- Section: Links  -->
+      
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+          © 2025 Copyright:
+          <a class="text-reset fw-bold" href="./index.html">MarineTraffic</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+      <!-- Footer -->  
+</body>
+</html>

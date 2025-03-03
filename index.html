@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+      .video-container {
+          position: relative;
+          width: 100%;
+          max-width: 800px;
+          margin: auto;
+      }
+      .video-container iframe {
+          width: 100%;
+          height: 450px;
+          border-radius: 10px;
+      }
+      .video-overlay {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: rgba(0, 0, 0, 0.3);
+          cursor: pointer;
+      }
+  </style>
+    <title>Document</title>
+
+    
+</head>
+<body>
+    <!--NavBar Started-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-info sticky-top">
+        <div class="container-fluid">
+          <a class=" navbar-brand" href="#"><img height="50px" width=100px" src="./assets/MT LOGO.png" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./event.html">Event</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./Gallery.html">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./Committee.html">Committee</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./Contact.html">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./Terms_Condition.html">Terms and Conditions</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./Privacy_Policy.html">Privacy Policy</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!--Navbar ended-->
+
+
+      <!-- make changes to the images in sponsor and rest section -->
+      <!--Carousel for college image-->
+
+      <div id="carouselExampleCaptions" class="carousel slide mb-4" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <div class="mask"></div>
+            <img src="./assets/catalogue3.png" class="d-block w-100 h-50" style="filter:brightness(40%)" alt="c3">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="display-5"> AMET Marine Traffic 2025 - Sail Beyond Limits!</h5>
+              <p>Ride the waves of adventure and knowledge!</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/catalogue1.png" class="d-block w-100 h-50" style="filter:brightness(40%)" alt="c1">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="display-5">Conquer the Tides!</h5>
+              <p>Experience the thrill of the sea, only at AMET!</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/catalogue2.png" class="d-block w-100 h-50" style="filter:brightness(40%)" alt="c2">
+              <div class="carousel-caption d-none d-md-block">
+                <h5 class="display-5">Where the Ocean Meets Opportunity!</h5>
+                <p>Dive into excitement, innovation, and maritime excellence!</p>
+              </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!--carousel for logo ended-->
+
+    
+    
+      <!--Card component-->
+      <div class="container-fluid mb-4">
+        <h1 class="display-1 text-center text-info">Highlights of the Event</h1>
+        <div class="row justify-content-center g-4"> <!-- Centers the row and adds gap -->
+            <!-- Card 1 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card mx-auto border-0" style="width: 18rem;">  <!-- Centers card -->
+                    <img src="./assets/event1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Dive deep into the ultimate test of skill and precision! Watch as cadets battle the clock to assemble components underwater, pushing the limits of marine engineering excellence. Be there to witness the thrill on 5th March 2025 at the Swimming Pool!</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card mx-auto border-0" style="width: 18rem;">
+                    <img src="./assets/event2.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">A war of wits and intellect awaits! Engage in a high-stakes contest where only the sharpest minds prevail. Experience the clash of ideas and innovation on 6th March 2025 at DNV Hall-II—where strategy meets intelligence!</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card mx-auto border-0" style="width: 18rem;">
+                    <img src="./assets/event3.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Unleash the rhythm and rock the stage! A spectacular celebration of music, dance, and culture, bringing the maritime spirit alive. Don’t miss the electrifying performances on 7th March 2025 at the Auditorium—where talent sets sail!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Card component over-->
+
+    <!--About Us-->
+
+    <div class="container-fluid pt-5 pb-5 bg-info justify-content-center">
+        <h1 class="display-1 text-center">About the Event</h1>
+        <p class="p-5 text-center">
+          Marine Traffic, the flagship event of AMET University, Chennai, is a dynamic conclave that unites maritime students, industry leaders, and professionals for an unparalleled experience of learning, competition, and networking. Featuring summits, debates, technical challenges, sports events, and inter-university competitions, this event bridges the gap between academia and industry, offering students hands-on training through simulations, maritime drills, and expert-led workshops. With top recruiters and corporate leaders in attendance, Marine Traffic provides a gateway to career and internship opportunities, fostering leadership, teamwork, and innovation. Rooted in a vision to create a global hub for maritime excellence, the event promotes sustainability, automation, and advancements in marine safety, shaping the future of the shipping industry. Hosted by AMET University, India’s first private maritime university, with state-of-the-art simulators, a fully equipped ship-in-campus, and global industry collaborations, Marine Traffic stands as a launchpad for aspiring maritime professionals. With three decades of excellence, AMET continues to produce world-class seafarers and industry-ready graduates, making Marine Traffic the ultimate celebration of maritime talent, leadership, and innovation. Set sail for success—join Marine Traffic and make waves in the maritime world!
+    </p>
+    <div class="d-flex justify-content-center">
+        <a href="./files/Copy of MT'25 INVITATION (final)_20250303_141831_0000.pdf" download  class="mx-auto btn btn-outline-success w-50 p-2">Download Brouchre For More Information</a>
+    </div>
+    </div>
+    <!--about section ends-->
+
+
+    <!--Why participate-->
+
+    <div class="container-fluid mt-4 mb-4">
+        <div class="row gx-4">
+            <div class="col">
+                <h1 class="display-3 text-info text-center pb-4">Lets participate</h1>
+                <p class="text-center text-info">
+                  Are you ready to test your skills, compete with the best, and gain unparalleled industry exposure? Marine Traffic is more than just an event—it’s an opportunity to engage, excel, and evolve in the maritime sector!
+
+                  <ul class="text-info">
+                   <li><span class="text-bg-info fw-bold"> Showcase Your Talent</span> – Compete in technical challenges, debates, and inter-college tournaments against top maritime institutions.</li>
+                   <li><span class="text-bg-info fw-bold"> Expand Your Network </span>– Connect with students, professionals, and recruiters from leading shipping and logistics companies.</li>
+                   <li><span class="text-bg-info fw-bold"> Win Recognition & Rewards </span>– Earn certificates, accolades, and potential career opportunities through your participation.</li> 
+                  </ul>
+                  <span class="text-info">
+                    Join the Action!
+                    Whether you’re here to compete, learn, or network, Marine Traffic is the perfect platform to elevate your maritime journey. Don’t miss your chance to be a part of this exciting and transformative experience!                
+                  </span>
+                </p>
+                <div class="d-flex justify-content-center">
+                    <a href="./files/MT 25 BROCHURE (3).pdf" download class="mx-auto btn btn-outline-info w-50 p-2">              
+                      Register Now & Set Sail for Success!
+                    </a>
+                </div>
+            </div>        
+            <div class="col d-none d-md-block"> <!-- Hide image on small screens -->
+                <div class="video-container">
+                    <!-- Autoplay, Muted YouTube Video -->
+                    <iframe id="videoFrame"
+                        src="https://www.youtube.com/embed/005Y6431lnM?autoplay=1&mute=1&controls=0&loop=1&playlist=005Y6431lnM"
+                        title="YouTube video"
+                        frameborder="0"
+                        allow="autoplay; encrypted-media"
+                        allowfullscreen>
+                    </iframe>
+                    <!-- Overlay to enable full-screen sound playback -->
+                    <div class="video-overlay" onclick="playFullscreen()"></div>
+                </div>
+            
+            <script>
+                function playFullscreen() {
+                    let videoId = "005Y6431lnM"; // Replace with your actual YouTube video ID
+                    let url = `https://www.youtube.com/watch?v=${videoId}`;
+                    window.open(url, "_blank");
+                }
+            </script>            
+          </div>        
+        </div>
+    </div>
+    <!--participate done-->
+
+    <!--Partners-->
+
+    <div class="container-fluid mb-5">
+        <h1 class="display-1 text-capitalize text-info fw-semibold text-center">our exclusive partners</h1>
+        <div class="row justify-content-center g-4">
+            <div class="col-sm-12 col-md-6 col-lg-6 text-center d-flex justify-content-center" style="height: 400px;">
+                <img class="img-fluid border-0 h-100" src="./assets/sponsors/IMG-20250301-WA0002-removebg-preview.png" alt="">
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6 text-center d-flex justify-content-center" style="height: 400px;">
+                <img class="img-thumbnail border-0 h-100" src="./assets/sponsors/SEAFARER.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid mb-4 bg-white">
+      <div class="row justify-content-center g-4">
+        <div class="col-sm-12 col-md-6 col-lg-6 text-center">
+        <h1 class="display-1 text-capitalize text-info fw-semibold mb-4">our sponsors</h1>
+        <!-- Carousel -->
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner d-flex align-items-center" style="height: 400px;">
+                <div class="carousel-item active  ">
+                    <img src="./assets/sponsors/HSBC.png" class="img-thumbnail d-block w-100 h-100 border-0" alt="HSBC">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/sponsors/TOYOTA.png" class="img-thumbnail d-block w-100 h-100 border-0" alt="TOYOTA">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/sponsors/IMEI.png" class="img-thumbnail d-block w-100 h-100 border-0" alt="IMEI">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/sponsors/AMET CITY COLLEGE.png" class="img-thumbnail d-block w-100 h-100 border-0" alt="AMET CITY COLLEGE">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/sponsors/BEAST.png" class="img-thumbnail d-block w-100 h-100 border-0" alt="BEAST">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+      <div class="col-sm-12 col-md-6 col-lg-6 text-center" >
+          <h1 class="display-1 text-capitalize text-info fw-semibold mb-4">media partners</h1>
+          <div class="d-flex justify-content-center" style="height: 400px;">
+              <img src="./assets/sponsors/CARGO INSIGHT.png" alt="Cargo Insight" class="img-thumbnail w-100 h-100 border-0">
+          </div>
+      </div>
+    </div>
+    </div>
+    <!-- partners over -->
+     
+       <!-- Footer -->
+<footer class="container-fluid text-center text-lg-start bg-info text-muted">
+  <!-- Section: Social media -->
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    <!-- Left -->
+    <div class="me-5 d-none d-lg-block">
+      <span>Get connected with us on social networks: </span>
+    </div>
+    <!-- Left -->
+
+    <!-- Right -->
+    <div>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://www.instagram.com/marine_traffic_2k25?igsh=MWo0dXl1a214MG15dA==" class="me-4 text-reset">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-gem me-3"></i>Marine Traffic 2025
+          </h6>
+          <p>
+            Get ready for an electrifying maritime extravaganza at AMET University! From adrenaline-pumping underwater challenges to intense intellectual battles and show-stopping cultural performances, Marine Traffic 2025 is the ultimate fusion of skill, innovation, and entertainment. Witness the best minds and talents from across universities compete, collaborate, and celebrate the spirit of the sea. Join us and be part of the legacy! 
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Useful links
+          </h6>
+          <p>
+            <a href="./index.html" class="text-reset">Home</a>
+          </p>
+          <p>
+            <a href="./about.html" class="text-reset">About</a>
+          </p>
+          <p>
+            <a href="./Contact.html" class="text-reset">Contact</a>
+          </p>
+          <p>
+            <a href="./Privacy_Policy.html" class="text-reset">Privacy Policy</a>
+          </p>
+          <p>
+            <a href="./Terms_Condition.html" class="text-reset">Terms and Conditions</a>
+          </p>
+          <p>
+            <a href="./event.html" class="text-reset">Register</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">Usefull Contacts</h6>
+          <p><i class="fas fa-home me-3"></i>135, SH 49, Kanathur, Kanathur Reddykuppam, Tamil Nadu 603112</p>
+          <p>
+            <a class="link-secondary" href="mailto:marinetraffic@ametuniv.ac.in?subject=Inquiry&body=Hello,%20I%20would%20like%20to%20know%20more"><i class="fas fa-envelope me-3"></i>marinetraffic@ametuniv.ac.in</a>
+          </p>
+          <p><a href="tel:+918608872674" class="link-secondary"><i class="fas fa-phone me-3"></i>+91 8608872674</a></p>
+         <p><a href="tel:+919994564994" class="link-secondary"><i class="fas fa-phone me-3"></i>+91 9994564994</a></p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2025 Copyright:
+    <a class="text-reset fw-bold" href="./index.html">MarineTraffic</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- F
